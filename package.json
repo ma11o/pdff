@@ -1,0 +1,19 @@
+{
+  "name": "pdff",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": ""
+  },
+  "bin": {
+    "pdff": "index.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "ma11o",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "ghostscript-node": "^1.5.0"
+  }
+}
