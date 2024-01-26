@@ -7,7 +7,7 @@ import fs from "fs-extra";
 
 program
   .command("compress")
-  .alias("c")
+  .alias("cp")
   .argument("[file]", "PDF file for compress")
   .description("Compress pdf file")
   .action(async function (file) {
@@ -52,12 +52,12 @@ program
 
 program
   .command("combine")
-  .alias("s")
+  .alias("cb")
   .argument("[file1]", "First PDF file for combine")
   .argument("[file2]", "Second PDF file for combine")
   .description("Combine pdf file")
   .action(async function (file1, file2) {
-    console.log("処理中...");
+    console.log("Processing...");
 
     try {
       const pdf1 = fs.readFileSync(file1);
